@@ -13,7 +13,7 @@ jobs:
         fail-fast: false
         matrix:
           projectPath:
-            - Motherload-Clone
+            - ./
           unityVersion:
             - 2019.3.9f1
           targetPlatform:
