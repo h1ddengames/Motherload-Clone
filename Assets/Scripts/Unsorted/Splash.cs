@@ -6,7 +6,7 @@ using Sirenix.OdinInspector;
 using Michsky.UI.ModernUIPack;
 using UnityEngine;
 
-namespace h1ddengames {
+namespace h1ddengames.Unsorted {
     public class Splash : MonoBehaviour {
         #region Exposed Fields
         public ModalWindowManager splashModalWindow;
