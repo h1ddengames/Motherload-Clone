@@ -14,6 +14,7 @@ namespace h1ddengames.Unsorted {
         #endregion
 
         #region Private Fields
+        Canvas canvas;
         #endregion
 
         #region Getters/Setters/Constructors
@@ -23,10 +24,16 @@ namespace h1ddengames.Unsorted {
         public void Quit() {
             Application.Quit(0);
         }
+
+        public void ResetSortOrder() {
+            canvas.sortingOrder = 0;
+        }
         #endregion
 
         #region Unity Methods
         private void Start() {
+            canvas = GetComponent<Canvas>();
+            canvas.sortingOrder = 20;
             splashModalWindow.gameObject.SetActive(true);
             splashModalWindow.OpenWindow();
             quitModalWindow.gameObject.SetActive(false);
@@ -34,6 +41,7 @@ namespace h1ddengames.Unsorted {
 
         private void Update() {
             if(Input.GetKeyDown(KeyCode.Escape)) {
+                canvas.sortingOrder = 20;
                 quitModalWindow.gameObject.SetActive(true);
                 quitModalWindow.OpenWindow();
             }
