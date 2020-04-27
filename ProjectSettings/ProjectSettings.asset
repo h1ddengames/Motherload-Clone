@@ -686,10 +686,10 @@ PlayerSettings:
     m_VersionCode: 1
     m_VersionName: 
   apiCompatibilityLevel: 6
-  cloudProjectId: 
+  cloudProjectId: 8d98263a-45db-4f93-9146-ca1214073c29
   framebufferDepthMemorylessMode: 0
-  projectName: 
-  organizationId: 
+  projectName: Motherload-Clone
+  organizationId: h1ddengames
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0
