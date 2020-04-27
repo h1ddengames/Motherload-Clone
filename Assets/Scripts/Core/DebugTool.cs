@@ -66,7 +66,7 @@ namespace h1ddengames.Core {
             if(timer > updateTime) {
                 timer = 0f;
                 ConfigManager.FetchConfigs<userAttributes, appAttributes>(new userAttributes(), new appAttributes());
-                Log("Updated configs.");
+                //Log("Updated configs.");
             }
         }
         #endregion
