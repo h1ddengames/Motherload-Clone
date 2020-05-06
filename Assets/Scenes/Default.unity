@@ -4488,6 +4488,204 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &898680624
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 898680625}
+  - component: {fileID: 898680626}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &898680625
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 898680624}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &898680626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 898680624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de4117aa165a91043834acd6b9f8001f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: stats
+      Entry: 7
+      Data: 0|h1ddengames.EntityStats, Assembly-CSharp
+    - Name: hp
+      Entry: 3
+      Data: 10
+    - Name: mp
+      Entry: 3
+      Data: 20
+    - Name: strength
+      Entry: 4
+      Data: 30
+    - Name: intelligence
+      Entry: 4
+      Data: 40
+    - Name: luck
+      Entry: 4
+      Data: 50
+    - Name: dexterity
+      Entry: 4
+      Data: 25
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: improvedStats
+      Entry: 7
+      Data: 1|h1ddengames.ImprovedEntityStats, Assembly-CSharp
+    - Name: hp
+      Entry: 7
+      Data: 2|h1ddengames.Stat`1[[System.Int32, mscorlib]], Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 25
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: mp
+      Entry: 7
+      Data: 3|h1ddengames.Stat`1[[System.Int32, mscorlib]], Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 20
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: strength
+      Entry: 7
+      Data: 4|h1ddengames.Stat`1[[System.Single, mscorlib]], Assembly-CSharp
+    - Name: value
+      Entry: 4
+      Data: 13
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: intelligence
+      Entry: 7
+      Data: 5|h1ddengames.Stat`1[[System.Single, mscorlib]], Assembly-CSharp
+    - Name: value
+      Entry: 4
+      Data: 12
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: luck
+      Entry: 7
+      Data: 6|h1ddengames.Stat`1[[System.Single, mscorlib]], Assembly-CSharp
+    - Name: value
+      Entry: 4
+      Data: 11
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: dexterity
+      Entry: 7
+      Data: 7|h1ddengames.Stat`1[[System.Single, mscorlib]], Assembly-CSharp
+    - Name: value
+      Entry: 4
+      Data: 10
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: otherImprovedStats
+      Entry: 7
+      Data: 8|h1ddengames.ImprovedEntityStats, Assembly-CSharp
+    - Name: hp
+      Entry: 7
+      Data: 9|h1ddengames.Stat`1[[System.Int32, mscorlib]], Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 7
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: mp
+      Entry: 7
+      Data: 10|h1ddengames.Stat`1[[System.Int32, mscorlib]], Assembly-CSharp
+    - Name: value
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: strength
+      Entry: 7
+      Data: 11|h1ddengames.Stat`1[[System.Single, mscorlib]], Assembly-CSharp
+    - Name: value
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: intelligence
+      Entry: 7
+      Data: 12|h1ddengames.Stat`1[[System.Single, mscorlib]], Assembly-CSharp
+    - Name: value
+      Entry: 4
+      Data: 5.5
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: luck
+      Entry: 7
+      Data: 13|h1ddengames.Stat`1[[System.Single, mscorlib]], Assembly-CSharp
+    - Name: value
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: dexterity
+      Entry: 7
+      Data: 14|h1ddengames.Stat`1[[System.Single, mscorlib]], Assembly-CSharp
+    - Name: value
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  savePath: C:\Work\Projects\C#\Motherload-Clone\Temp\save.txt
+  bytesAsBytesArray: 022f000000000128000000680031006400640065006e00670061006d00650073002e0045006e007400690074007900530074006100740073002c00200041007300730065006d0062006c0079002d0043005300680061007200700000000000170102000000680070000a0000001701020000006d007000140000001f010800000073007400720065006e006700740068000000f0411f010c00000069006e00740065006c006c006900670065006e0063006500000020421f01040000006c00750063006b00000048421f01090000006400650078007400650072006900740079000000c84105
 --- !u!1 &911575397
 GameObject:
   m_ObjectHideFlags: 0
@@ -8100,6 +8298,62 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1522122400}
   m_CullTransparentMesh: 0
+--- !u!1 &1522595229
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1522595231}
+  - component: {fileID: 1522595230}
+  m_Layer: 0
+  m_Name: BlockGenerator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1522595230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1522595229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cdab9e95ad4c3147b0c7ba6c37ab71a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  blockPrefab: {fileID: 0}
+  listOfBlockZones:
+  - {fileID: 11400000, guid: 4d0e1e47713008645b57ccf1c0431adb, type: 2}
+  listOfBlocks: []
+--- !u!4 &1522595231
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1522595229}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1533798998
 GameObject:
   m_ObjectHideFlags: 0
