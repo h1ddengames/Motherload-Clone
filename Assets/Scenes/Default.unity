@@ -4539,153 +4539,64 @@ MonoBehaviour:
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
-    SerializationNodes:
-    - Name: stats
-      Entry: 7
-      Data: 0|h1ddengames.EntityStats, Assembly-CSharp
-    - Name: hp
-      Entry: 3
-      Data: 10
-    - Name: mp
-      Entry: 3
-      Data: 20
-    - Name: strength
-      Entry: 4
-      Data: 30
-    - Name: intelligence
-      Entry: 4
-      Data: 40
-    - Name: luck
-      Entry: 4
-      Data: 50
-    - Name: dexterity
-      Entry: 4
-      Data: 25
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: improvedStats
-      Entry: 7
-      Data: 1|h1ddengames.ImprovedEntityStats, Assembly-CSharp
-    - Name: hp
-      Entry: 7
-      Data: 2|h1ddengames.Stat`1[[System.Int32, mscorlib]], Assembly-CSharp
-    - Name: value
-      Entry: 3
-      Data: 25
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: mp
-      Entry: 7
-      Data: 3|h1ddengames.Stat`1[[System.Int32, mscorlib]], Assembly-CSharp
-    - Name: value
-      Entry: 3
-      Data: 20
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: strength
-      Entry: 7
-      Data: 4|h1ddengames.Stat`1[[System.Single, mscorlib]], Assembly-CSharp
-    - Name: value
-      Entry: 4
-      Data: 13
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: intelligence
-      Entry: 7
-      Data: 5|h1ddengames.Stat`1[[System.Single, mscorlib]], Assembly-CSharp
-    - Name: value
-      Entry: 4
-      Data: 12
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: luck
-      Entry: 7
-      Data: 6|h1ddengames.Stat`1[[System.Single, mscorlib]], Assembly-CSharp
-    - Name: value
-      Entry: 4
-      Data: 11
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: dexterity
-      Entry: 7
-      Data: 7|h1ddengames.Stat`1[[System.Single, mscorlib]], Assembly-CSharp
-    - Name: value
-      Entry: 4
-      Data: 10
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: otherImprovedStats
-      Entry: 7
-      Data: 8|h1ddengames.ImprovedEntityStats, Assembly-CSharp
-    - Name: hp
-      Entry: 7
-      Data: 9|h1ddengames.Stat`1[[System.Int32, mscorlib]], Assembly-CSharp
-    - Name: value
-      Entry: 3
-      Data: 7
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: mp
-      Entry: 7
-      Data: 10|h1ddengames.Stat`1[[System.Int32, mscorlib]], Assembly-CSharp
-    - Name: value
-      Entry: 3
-      Data: 0
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: strength
-      Entry: 7
-      Data: 11|h1ddengames.Stat`1[[System.Single, mscorlib]], Assembly-CSharp
-    - Name: value
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: intelligence
-      Entry: 7
-      Data: 12|h1ddengames.Stat`1[[System.Single, mscorlib]], Assembly-CSharp
-    - Name: value
-      Entry: 4
-      Data: 5.5
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: luck
-      Entry: 7
-      Data: 13|h1ddengames.Stat`1[[System.Single, mscorlib]], Assembly-CSharp
-    - Name: value
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: dexterity
-      Entry: 7
-      Data: 14|h1ddengames.Stat`1[[System.Single, mscorlib]], Assembly-CSharp
-    - Name: value
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-  savePath: C:\Work\Projects\C#\Motherload-Clone\Temp\save.txt
-  bytesAsBytesArray: 022f000000000128000000680031006400640065006e00670061006d00650073002e0045006e007400690074007900530074006100740073002c00200041007300730065006d0062006c0079002d0043005300680061007200700000000000170102000000680070000a0000001701020000006d007000140000001f010800000073007400720065006e006700740068000000f0411f010c00000069006e00740065006c006c006900670065006e0063006500000020421f01040000006c00750063006b00000048421f01090000006400650078007400650072006900740079000000c84105
+    SerializationNodes: []
+  savePath: save.txt
+  allStats:
+  - hp: 15
+    mp: 20
+    strength: 25
+    intelligence: 30
+    luck: 35
+    dexterity: 40
+    min: 0
+    max: 0
+    isSet: 0
+  - hp: 45
+    mp: 50
+    strength: 55
+    intelligence: 60
+    luck: 65
+    dexterity: 70
+    min: 0
+    max: 0
+    isSet: 0
+  - hp: 75
+    mp: 80
+    strength: 85
+    intelligence: 90
+    luck: 95
+    dexterity: 100
+    min: 0
+    max: 0
+    isSet: 0
+  - hp: 110
+    mp: 120
+    strength: 130
+    intelligence: 140
+    luck: 150
+    dexterity: 160
+    min: 0
+    max: 0
+    isSet: 1
+  - hp: 0
+    mp: 0
+    strength: 0
+    intelligence: 0
+    luck: 0
+    dexterity: 0
+    min: 0
+    max: 0
+    isSet: 0
+  stats:
+    hp: 0
+    mp: 0
+    strength: 0
+    intelligence: 0
+    luck: 0
+    dexterity: 0
+    min: 0
+    max: 0
+    isSet: 0
 --- !u!1 &911575397
 GameObject:
   m_ObjectHideFlags: 0
