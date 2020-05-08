@@ -4539,64 +4539,59 @@ MonoBehaviour:
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
-    SerializationNodes: []
+    SerializationNodes:
+    - Name: spritesAndAudioClips
+      Entry: 7
+      Data: 0|System.Collections.Generic.Dictionary`2[[UnityEngine.Sprite, UnityEngine.CoreModule],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: comparer
+      Entry: 7
+      Data: 1|System.Collections.Generic.ObjectEqualityComparer`1[[UnityEngine.Sprite,
+        UnityEngine.CoreModule]], mscorlib
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
   savePath: save.txt
-  allStats:
-  - hp: 15
-    mp: 20
-    strength: 25
-    intelligence: 30
-    luck: 35
-    dexterity: 40
-    min: 0
-    max: 0
-    isSet: 0
-  - hp: 45
-    mp: 50
-    strength: 55
-    intelligence: 60
-    luck: 65
-    dexterity: 70
-    min: 0
-    max: 0
-    isSet: 0
-  - hp: 75
-    mp: 80
-    strength: 85
-    intelligence: 90
-    luck: 95
-    dexterity: 100
-    min: 0
-    max: 0
-    isSet: 0
-  - hp: 110
-    mp: 120
-    strength: 130
-    intelligence: 140
-    luck: 150
-    dexterity: 160
-    min: 0
-    max: 0
-    isSet: 1
-  - hp: 0
-    mp: 0
-    strength: 0
-    intelligence: 0
-    luck: 0
-    dexterity: 0
-    min: 0
-    max: 0
-    isSet: 0
-  stats:
-    hp: 0
-    mp: 0
-    strength: 0
-    intelligence: 0
-    luck: 0
-    dexterity: 0
-    min: 0
-    max: 0
-    isSet: 0
+  blocks:
+  - blockType: 0
+    xPosition: 0
+    yPosition: 0
+    blockLevel: 0
+    minBlockLevel: 0
+    maxBlockLevel: 0
+    blockExperience: 0
+    minBlockExperience: 0
+    maxBlockExperience: 0
+    timeToDestroy: 0
+  - blockType: 10
+    xPosition: 1
+    yPosition: 0
+    blockLevel: 0
+    minBlockLevel: 0
+    maxBlockLevel: 0
+    blockExperience: 0
+    minBlockExperience: 0
+    maxBlockExperience: 0
+    timeToDestroy: 0
+  - blockType: 20
+    xPosition: 2
+    yPosition: 0
+    blockLevel: 0
+    minBlockLevel: 0
+    maxBlockLevel: 0
+    blockExperience: 0
+    minBlockExperience: 0
+    maxBlockExperience: 0
+    timeToDestroy: 0
 --- !u!1 &911575397
 GameObject:
   m_ObjectHideFlags: 0

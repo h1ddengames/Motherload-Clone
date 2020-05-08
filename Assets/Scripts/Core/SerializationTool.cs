@@ -12,8 +12,12 @@ namespace h1ddengames {
     public class SerializationTool : SerializedMonoBehaviour {
         #region Exposed Fields
         public string savePath = "save.txt";
-        public List<EntityStats> allStats = new List<EntityStats>();
-        public EntityStats stats = new EntityStats();
+        //public List<EntityStats> allStats = new List<EntityStats>();
+        //public EntityStats stats = new EntityStats();
+
+        public List<BlockModel> blocks = new List<BlockModel>();
+
+        [SerializeField] private Dictionary<Sprite, AudioClip> spritesAndAudioClips = new Dictionary<Sprite, AudioClip>();
         #endregion
 
         #region Private Fields
@@ -34,7 +38,7 @@ namespace h1ddengames {
             }
 
             string fullSavePath = $"{Application.persistentDataPath}/{savePath}";
-            byte[] bytes = SerializationUtility.SerializeValue(allStats, DataFormat.JSON);
+            byte[] bytes = SerializationUtility.SerializeValue(blocks, DataFormat.JSON);
             File.WriteAllBytes(fullSavePath, bytes);
         }
 
@@ -42,7 +46,7 @@ namespace h1ddengames {
         public void LoadStateWithFile() {
             string fullSavePath = $"{Application.persistentDataPath}/{savePath}";
             byte[] bytes = File.ReadAllBytes(fullSavePath);
-            allStats = SerializationUtility.DeserializeValue<List<EntityStats>>(bytes, DataFormat.JSON);
+            blocks = SerializationUtility.DeserializeValue<List<BlockModel>>(bytes, DataFormat.JSON);
         }
         #endregion
 
@@ -64,5 +68,65 @@ namespace h1ddengames {
         public int min;
         public int max;
         public bool isSet;
+    }
+
+    public enum BlockType {
+        Blank = 0,
+        Dirt = 10,
+        Bronze = 20,
+        Iron = 30,
+        Silver = 40,
+        Gold = 50,
+        Ruby = 60,
+        Sapphire = 70,
+        Emerald = 80
+    }
+
+    [Serializable]
+    public class BlockModel {
+        [SerializeField] private BlockType blockType;
+        [SerializeField] private int xPosition;
+        [SerializeField] private int yPosition;
+        [SerializeField] private int blockLevel;
+        [SerializeField] private int minBlockLevel;
+        [SerializeField] private int maxBlockLevel;
+        [SerializeField] private int blockExperience;
+        [SerializeField] private int minBlockExperience;
+        [SerializeField] private int maxBlockExperience;
+        [SerializeField] private float timeToDestroy;
+
+        public int BlockLevel {
+            get => blockLevel;
+            set {
+                if(value < 1) {
+                    value = 1;
+                    Debug.LogError($"Block level was set lower than {value}.");
+                }
+
+                if(value > 100) {
+                    value = 100;
+                    Debug.LogError($"Block level was set higher than {value}.");
+                }
+
+                blockLevel = value;
+            }
+        }
+
+        public int BlockExperience {
+            get => blockExperience;
+            set {
+                if(value < -999999) {
+                    value = -999999;
+                    Debug.LogError($"Block experience was set lower than {value}.");
+                }
+
+                if(value > 999999) {
+                    value = 999999;
+                    Debug.LogError($"Block experience was set higher than {value}.");
+                }
+
+                blockExperience = value;
+            }
+        }
     }
 }
