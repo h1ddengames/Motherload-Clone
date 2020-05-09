@@ -41,7 +41,7 @@ namespace h1ddengames.Factories {
             public IBlockExperience WithBlockLevel(int minBlockLevel, int maxBlockLevel) {
                 blockModel.MinBlockLevel = minBlockLevel;
                 blockModel.MaxBlockLevel = maxBlockLevel;
-                blockModel.BlockLevel = UnityEngine.Random.Range(blockModel.MinBlockLevel, blockModel.MaxBlockLevel);
+                blockModel.BlockLevel = Tools.NextRandomInt(blockModel.MinBlockLevel, blockModel.MaxBlockLevel);
                 return this;
             }
 
@@ -53,7 +53,7 @@ namespace h1ddengames.Factories {
             public IBlockHP WithBlockExperience(int minBlockExperience, int maxBlockExperience) {
                 blockModel.MinBlockExperience = minBlockExperience;
                 blockModel.MaxBlockExperience = maxBlockExperience;
-                blockModel.BlockExperience = UnityEngine.Random.Range(blockModel.MinBlockExperience, blockModel.MaxBlockExperience);
+                blockModel.BlockExperience = Tools.NextRandomInt(blockModel.MinBlockExperience, blockModel.MaxBlockExperience);
                 return this;
             }
 
@@ -65,7 +65,7 @@ namespace h1ddengames.Factories {
             public IBlockDefense WithBlockHP(int minBlockHP, int maxBlockHP) {
                 blockModel.MinBlockHP = minBlockHP;
                 blockModel.MaxBlockHP = maxBlockHP;
-                blockModel.BlockHP = UnityEngine.Random.Range(blockModel.MinBlockHP, blockModel.MaxBlockHP);
+                blockModel.BlockHP = Tools.NextRandomInt(blockModel.MinBlockHP, blockModel.MaxBlockHP);
                 return this;
             }
 
@@ -77,7 +77,7 @@ namespace h1ddengames.Factories {
             public IBlockModel WithBlockDefense(int minBlockDefense, int maxBlockDefense) {
                 blockModel.MinBlockDefense = minBlockDefense;
                 blockModel.MaxBlockDefense = maxBlockDefense;
-                blockModel.BlockDefense = UnityEngine.Random.Range(blockModel.MinBlockDefense, blockModel.MaxBlockDefense);
+                blockModel.BlockDefense = Tools.NextRandomInt(blockModel.MinBlockDefense, blockModel.MaxBlockDefense);
                 return this;
             }
 

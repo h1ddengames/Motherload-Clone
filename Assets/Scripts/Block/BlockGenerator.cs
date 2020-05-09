@@ -6,6 +6,8 @@ using Sirenix.OdinInspector;
 using Michsky.UI.ModernUIPack;
 using UnityEngine;
 using h1ddengames.Factories.Blocks;
+using h1ddengames.Core;
+using h1ddengames.Extensions;
 
 namespace h1ddengames.Block {
     public class BlockGenerator : SerializedMonoBehaviour {
@@ -33,20 +35,21 @@ namespace h1ddengames.Block {
                 $"Depth: { blockZone.LowYPosition } " +
                 $"Current Offset: { offset }");
 
+            // Adding +1 to the offset so that the next blockzone doesn't overlap with the last row of the last blockzone.
             for(int yPosition = offset + 1; yPosition <= offset + blockZone.LowYPosition; yPosition++) {
                 for(int xPosition = blockZone.LowXPosition; xPosition <= blockZone.HighXPosition; xPosition++) {
                     //Debug.Log($"({xPosition}, {yPosition})");
                     blockModels.Add(
                         BlockModelFactory
                         .Start()
-                        .WithBlockType(Enums.Blocks.BlockType.Blank) // Randomize this
+                        .WithBlockType()
                         .WithPosition(xPosition, yPosition) // Do not change
                         .WithBlockLevel(5, 20)
                         .WithBlockExperience(100, 1000)
                         .WithBlockHP(10, 30)
                         .WithBlockDefense(5, 20)
                         .Finish()
-                        );
+                    );
                 }
             }
         }
@@ -55,6 +58,8 @@ namespace h1ddengames.Block {
         public void MultithreadedBlockZoneGenerator() {
             int offset = -1;
 
+            blockModels.Clear();
+
             foreach(var blockZone in blockZones) {
 
                 var blockZoneReporter = new Thread(() => GenerateBlockZone(blockZone, offset));
@@ -62,9 +67,14 @@ namespace h1ddengames.Block {
 
                 offset += blockZone.LowYPosition;
             }
+
+            SerializationTool.SaveDataToFile<List<BlockModel>>("save.txt", blockModels);
         }
 
-
+        [Button]
+        public void MultithreadedBlockZoneGeneratorTimed() {
+            Debug.Log($"Run time: { Tools.Timer(MultithreadedBlockZoneGenerator) } generated {blockModels.Count}");
+        }
 
         //[Button]
         //public void GenerateBlocks() {

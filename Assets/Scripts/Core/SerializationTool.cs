@@ -3,25 +3,12 @@
 using System.IO;
 using System.Collections.Generic;
 using Sirenix.OdinInspector;
-using UnityEngine;
 using Sirenix.Serialization;
+using UnityEngine;
 
 namespace h1ddengames.Core {
-    public class SerializationTool : SerializedMonoBehaviour {
-        #region Exposed Fields
-        #endregion
-
-        #region Private Fields
-        #endregion
-
-        #region Getters/Setters/Constructors
-        #endregion
-
-        #region My Methods
-        public void Start() {
-            //Debug.Log($"{Application.persistentDataPath}");
-        }
-
+    public class SerializationTool {
+        #region Helper Methods
         public static bool SaveDataToFile<T>(string fileNameWithExtension, T data) {
             if(string.IsNullOrEmpty(fileNameWithExtension)) {
                 Debug.Log("Filename is empty or null.");
@@ -37,12 +24,6 @@ namespace h1ddengames.Core {
             byte[] bytes = File.ReadAllBytes($"{Application.persistentDataPath}/{fileNameWithExtension}");
             return SerializationUtility.DeserializeValue<T>(bytes, DataFormat.JSON);
         }
-        #endregion
-
-        #region Unity Methods
-        #endregion
-
-        #region Helper Methods
         #endregion
     }
 }
