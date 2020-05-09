@@ -1,19 +1,22 @@
 ﻿// Created by h1ddengames
 
-using System;
+using System.Threading;
 using System.Collections.Generic;
 using Sirenix.OdinInspector;
 using Michsky.UI.ModernUIPack;
 using UnityEngine;
-using h1ddengames.Core;
+using h1ddengames.Factories.Blocks;
 
 namespace h1ddengames.Block {
     public class BlockGenerator : SerializedMonoBehaviour {
         #region Exposed Fields
         public GameObject blockPrefab;
 
-        public List<BlockZone> listOfBlockZones = new List<BlockZone>();
-        public List<GameObject> listOfBlocks = new List<GameObject>();
+        public List<GameObject> blocks = new List<GameObject>();
+        public List<BlockModel> blockModels = new List<BlockModel>();
+        public List<BlockZone> blockZones = new List<BlockZone>();
+
+        [SerializeField] private Dictionary<Sprite, AudioClip> spritesAndAudioClips = new Dictionary<Sprite, AudioClip>();
         #endregion
 
         #region Private Fields
@@ -23,7 +26,43 @@ namespace h1ddengames.Block {
         #endregion
 
         #region My Methods
+        public void GenerateBlockZone(BlockZone blockZone, int offset) {
+            Debug.Log(
+                $"Left: {blockZone.LowXPosition} " +
+                $"Right: { blockZone.HighXPosition } " +
+                $"Depth: { blockZone.LowYPosition } " +
+                $"Current Offset: { offset }");
 
+            for(int yPosition = offset + 1; yPosition <= offset + blockZone.LowYPosition; yPosition++) {
+                for(int xPosition = blockZone.LowXPosition; xPosition <= blockZone.HighXPosition; xPosition++) {
+                    //Debug.Log($"({xPosition}, {yPosition})");
+                    blockModels.Add(
+                        BlockModelFactory
+                        .Start()
+                        .WithBlockType(Enums.Blocks.BlockType.Blank) // Randomize this
+                        .WithPosition(xPosition, yPosition) // Do not change
+                        .WithBlockLevel(5, 20)
+                        .WithBlockExperience(100, 1000)
+                        .WithBlockHP(10, 30)
+                        .WithBlockDefense(5, 20)
+                        .Finish()
+                        );
+                }
+            }
+        }
+
+        [Button]
+        public void MultithreadedBlockZoneGenerator() {
+            int offset = -1;
+
+            foreach(var blockZone in blockZones) {
+
+                var blockZoneReporter = new Thread(() => GenerateBlockZone(blockZone, offset));
+                blockZoneReporter.Start();
+
+                offset += blockZone.LowYPosition;
+            }
+        }
 
 
 

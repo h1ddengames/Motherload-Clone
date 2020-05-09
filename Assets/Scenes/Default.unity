@@ -4539,59 +4539,7 @@ MonoBehaviour:
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
-    SerializationNodes:
-    - Name: spritesAndAudioClips
-      Entry: 7
-      Data: 0|System.Collections.Generic.Dictionary`2[[UnityEngine.Sprite, UnityEngine.CoreModule],[UnityEngine.AudioClip,
-        UnityEngine.AudioModule]], mscorlib
-    - Name: comparer
-      Entry: 7
-      Data: 1|System.Collections.Generic.ObjectEqualityComparer`1[[UnityEngine.Sprite,
-        UnityEngine.CoreModule]], mscorlib
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 12
-      Data: 0
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-  savePath: save.txt
-  blocks:
-  - blockType: 0
-    xPosition: 0
-    yPosition: 0
-    blockLevel: 0
-    minBlockLevel: 0
-    maxBlockLevel: 0
-    blockExperience: 0
-    minBlockExperience: 0
-    maxBlockExperience: 0
-    timeToDestroy: 0
-  - blockType: 10
-    xPosition: 1
-    yPosition: 0
-    blockLevel: 0
-    minBlockLevel: 0
-    maxBlockLevel: 0
-    blockExperience: 0
-    minBlockExperience: 0
-    maxBlockExperience: 0
-    timeToDestroy: 0
-  - blockType: 20
-    xPosition: 2
-    yPosition: 0
-    blockLevel: 0
-    minBlockLevel: 0
-    maxBlockLevel: 0
-    blockExperience: 0
-    minBlockExperience: 0
-    maxBlockExperience: 0
-    timeToDestroy: 0
+    SerializationNodes: []
 --- !u!1 &911575397
 GameObject:
   m_ObjectHideFlags: 0
@@ -8241,11 +8189,31 @@ MonoBehaviour:
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
-    SerializationNodes: []
+    SerializationNodes:
+    - Name: spritesAndAudioClips
+      Entry: 7
+      Data: 0|System.Collections.Generic.Dictionary`2[[UnityEngine.Sprite, UnityEngine.CoreModule],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: comparer
+      Entry: 7
+      Data: 1|System.Collections.Generic.ObjectEqualityComparer`1[[UnityEngine.Sprite,
+        UnityEngine.CoreModule]], mscorlib
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
   blockPrefab: {fileID: 0}
-  listOfBlockZones:
-  - {fileID: 11400000, guid: 4d0e1e47713008645b57ccf1c0431adb, type: 2}
-  listOfBlocks: []
+  blocks: []
+  blockModels: []
+  blockZones: []
 --- !u!4 &1522595231
 Transform:
   m_ObjectHideFlags: 0
