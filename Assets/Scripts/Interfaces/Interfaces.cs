@@ -15,21 +15,25 @@ namespace h1ddengames.Interfaces {
         }
 
         public interface IBlockLevel {
+            IBlockExperience WithBlockLevelFromBlockType();
             IBlockExperience WithBlockLevel(int blockLevel);
             IBlockExperience WithBlockLevel(int minBlockLevel, int maxBlockLevel);
         }
 
         public interface IBlockExperience {
+            IBlockHP WithBlockExperienceFromBlockType();
             IBlockHP WithBlockExperience(int blockExperience);
             IBlockHP WithBlockExperience(int minBlockExperience, int maxBlockExperience);
         }
 
         public interface IBlockHP {
+            IBlockDefense WithBlockHPFromBlockType();
             IBlockDefense WithBlockHP(int blockHP);
             IBlockDefense WithBlockHP(int minBlockHP, int maxBlockHP);
         }
 
         public interface IBlockDefense {
+            IBlockModel WithBlockDefenseFromBlockType();
             IBlockModel WithBlockDefense(int blockDefense);
             IBlockModel WithBlockDefense(int minBlockDefense, int maxBlockDefense);
         }

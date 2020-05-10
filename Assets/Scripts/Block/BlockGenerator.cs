@@ -43,11 +43,11 @@ namespace h1ddengames.Block {
                         BlockModelFactory
                         .Start()
                         .WithBlockType()
-                        .WithPosition(xPosition, yPosition) // Do not change
-                        .WithBlockLevel(5, 20)
-                        .WithBlockExperience(100, 1000)
-                        .WithBlockHP(10, 30)
-                        .WithBlockDefense(5, 20)
+                        .WithPosition(xPosition, yPosition)
+                        .WithBlockLevelFromBlockType()
+                        .WithBlockExperienceFromBlockType()
+                        .WithBlockHPFromBlockType()
+                        .WithBlockDefenseFromBlockType()
                         .Finish()
                     );
                 }

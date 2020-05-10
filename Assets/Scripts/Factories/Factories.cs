@@ -18,12 +18,13 @@ namespace h1ddengames.Factories {
             }
 
             public IBlockPosition WithBlockType() {
-                blockModel.BlockType = Tools.RandomEnumValue<BlockType>();
-                return this;
+                return WithBlockType(Tools.RandomDictionaryValue(BlockType.ALLBLOCKS));
             }
 
             public IBlockPosition WithBlockType(BlockType blockType) {
                 blockModel.BlockType = blockType;
+                blockModel.BlockTypeId = blockType.Id;
+                blockModel.BlockTypeString = blockType.BlockName;
                 return this;
             }
 
@@ -31,6 +32,10 @@ namespace h1ddengames.Factories {
                 blockModel.XPosition = xPosition;
                 blockModel.YPosition = yPosition;
                 return this;
+            }
+
+            public IBlockExperience WithBlockLevelFromBlockType() {
+                return WithBlockLevel(blockModel.BlockType.MinBlockLevel, blockModel.BlockType.MaxBlockLevel);
             }
 
             public IBlockExperience WithBlockLevel(int blockLevel) {
@@ -45,6 +50,10 @@ namespace h1ddengames.Factories {
                 return this;
             }
 
+            public IBlockHP WithBlockExperienceFromBlockType() {
+                return WithBlockExperience(blockModel.BlockType.MinBlockExperience, blockModel.BlockType.MaxBlockExperience);
+            }
+
             public IBlockHP WithBlockExperience(int blockExperience) {
                 blockModel.BlockExperience = blockExperience;
                 return this;
@@ -57,6 +66,10 @@ namespace h1ddengames.Factories {
                 return this;
             }
 
+            public IBlockDefense WithBlockHPFromBlockType() {
+                return WithBlockHP(blockModel.BlockType.MinBlockHP, blockModel.BlockType.MaxBlockHP);
+            }
+
             public IBlockDefense WithBlockHP(int blockHP) {
                 blockModel.BlockHP = blockHP;
                 return this;
@@ -67,6 +80,10 @@ namespace h1ddengames.Factories {
                 blockModel.MaxBlockHP = maxBlockHP;
                 blockModel.BlockHP = Tools.NextRandomInt(blockModel.MinBlockHP, blockModel.MaxBlockHP);
                 return this;
+            }
+
+            public IBlockModel WithBlockDefenseFromBlockType() {
+                return WithBlockDefense(blockModel.BlockType.MinBlockDefense, blockModel.BlockType.MaxBlockDefense);
             }
 
             public IBlockModel WithBlockDefense(int blockDefense) {
