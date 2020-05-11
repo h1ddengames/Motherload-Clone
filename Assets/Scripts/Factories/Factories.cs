@@ -18,7 +18,7 @@ namespace h1ddengames.Factories {
             }
 
             public IBlockPosition WithBlockType() {
-                return WithBlockType(Tools.RandomDictionaryValue(BlockType.ALLBLOCKS));
+                return WithBlockType(Tools.GetRandomValue(BlockType.ALLBLOCKS));
             }
 
             public IBlockPosition WithBlockType(BlockType blockType) {
@@ -46,7 +46,7 @@ namespace h1ddengames.Factories {
             public IBlockExperience WithBlockLevel(int minBlockLevel, int maxBlockLevel) {
                 blockModel.MinBlockLevel = minBlockLevel;
                 blockModel.MaxBlockLevel = maxBlockLevel;
-                blockModel.BlockLevel = Tools.NextRandomInt(blockModel.MinBlockLevel, blockModel.MaxBlockLevel);
+                blockModel.BlockLevel = Tools.GetRandomInt(blockModel.MinBlockLevel, blockModel.MaxBlockLevel);
                 return this;
             }
 
@@ -62,7 +62,7 @@ namespace h1ddengames.Factories {
             public IBlockHP WithBlockExperience(int minBlockExperience, int maxBlockExperience) {
                 blockModel.MinBlockExperience = minBlockExperience;
                 blockModel.MaxBlockExperience = maxBlockExperience;
-                blockModel.BlockExperience = Tools.NextRandomInt(blockModel.MinBlockExperience, blockModel.MaxBlockExperience);
+                blockModel.BlockExperience = Tools.GetRandomInt(blockModel.MinBlockExperience, blockModel.MaxBlockExperience);
                 return this;
             }
 
@@ -78,7 +78,7 @@ namespace h1ddengames.Factories {
             public IBlockDefense WithBlockHP(int minBlockHP, int maxBlockHP) {
                 blockModel.MinBlockHP = minBlockHP;
                 blockModel.MaxBlockHP = maxBlockHP;
-                blockModel.BlockHP = Tools.NextRandomInt(blockModel.MinBlockHP, blockModel.MaxBlockHP);
+                blockModel.BlockHP = Tools.GetRandomInt(blockModel.MinBlockHP, blockModel.MaxBlockHP);
                 return this;
             }
 
@@ -94,7 +94,7 @@ namespace h1ddengames.Factories {
             public IBlockModel WithBlockDefense(int minBlockDefense, int maxBlockDefense) {
                 blockModel.MinBlockDefense = minBlockDefense;
                 blockModel.MaxBlockDefense = maxBlockDefense;
-                blockModel.BlockDefense = Tools.NextRandomInt(blockModel.MinBlockDefense, blockModel.MaxBlockDefense);
+                blockModel.BlockDefense = Tools.GetRandomInt(blockModel.MinBlockDefense, blockModel.MaxBlockDefense);
                 return this;
             }
 

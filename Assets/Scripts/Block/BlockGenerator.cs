@@ -1,5 +1,6 @@
 ﻿// Created by h1ddengames
 
+using System.Linq;
 using System.Threading;
 using System.Collections.Generic;
 using Sirenix.OdinInspector;
@@ -18,6 +19,8 @@ namespace h1ddengames.Block {
         public List<BlockModel> blockModels = new List<BlockModel>();
         public List<BlockZone> blockZones = new List<BlockZone>();
 
+        public List<BlockModel> generateThisRow = new List<BlockModel>();
+
         [SerializeField] private Dictionary<Sprite, AudioClip> spritesAndAudioClips = new Dictionary<Sprite, AudioClip>();
         #endregion
 
@@ -29,11 +32,11 @@ namespace h1ddengames.Block {
 
         #region My Methods
         public void GenerateBlockZone(BlockZone blockZone, int offset) {
-            Debug.Log(
-                $"Left: {blockZone.LowXPosition} " +
-                $"Right: { blockZone.HighXPosition } " +
-                $"Depth: { blockZone.LowYPosition } " +
-                $"Current Offset: { offset }");
+            //Debug.Log(
+            //    $"Left: {blockZone.LowXPosition} " +
+            //    $"Right: { blockZone.HighXPosition } " +
+            //    $"Depth: { blockZone.LowYPosition } " +
+            //    $"Current Offset: { offset }");
 
             // Adding +1 to the offset so that the next blockzone doesn't overlap with the last row of the last blockzone.
             for(int yPosition = offset + 1; yPosition <= offset + blockZone.LowYPosition; yPosition++) {
@@ -54,6 +57,9 @@ namespace h1ddengames.Block {
             }
         }
 
+        // Generates 2500 in 3 ms           --- Improvement from singe threaded version: 200 blocks in 3 ms
+        // Generates 30000 in 43 ms         --- Improvement from singe threaded version: 20000 blocks in 43 ms
+        // Generates 350000 in 4.5 s        --- Improvement from singe threaded version: 200000 blocks in 54 s
         [Button]
         public void MultithreadedBlockZoneGenerator() {
             int offset = -1;
@@ -61,19 +67,45 @@ namespace h1ddengames.Block {
             blockModels.Clear();
 
             foreach(var blockZone in blockZones) {
+                if(blockZone != null) {
+                    var blockZoneReporter = new Thread(() => GenerateBlockZone(blockZone, offset));
+                    blockZoneReporter.Start();
 
-                var blockZoneReporter = new Thread(() => GenerateBlockZone(blockZone, offset));
-                blockZoneReporter.Start();
+                    // Required to make sure the same amount of blocks are generated each time.
+                    blockZoneReporter.Join();
 
-                offset += blockZone.LowYPosition;
+                    offset += blockZone.LowYPosition;
+                }
             }
 
+            // Saves BlockModel list data to C:\Users\hiddengames\AppData\LocalLow\hiddengames\Motherload-Clone
             SerializationTool.SaveDataToFile<List<BlockModel>>("save.txt", blockModels);
         }
 
         [Button]
         public void MultithreadedBlockZoneGeneratorTimed() {
             Debug.Log($"Run time: { Tools.Timer(MultithreadedBlockZoneGenerator) } generated {blockModels.Count}");
+
+            Debug.Log($"Sorting time: { Tools.Timer(OrderList) }");
+
+            generateThisRow.Clear();
+            generateThisRow = blockModels.Where(y => y.YPosition <= 5).ToList();
+        }
+
+        [Button]
+        public void ClearBlockModelList() {
+            blockModels.Clear();
+        }
+
+        public void OrderList() {
+            blockModels = blockModels.OrderBy(y => y.YPosition).ToList();
+        }
+
+        [Button]
+        public void GetRandomFloats() {
+            for(int i = 0; i < 10; i++) {
+                Debug.Log(Tools.GetRandomFloat());
+            }
         }
 
         //[Button]
