@@ -2,9 +2,11 @@
 
 using System;
 using System.Collections.Generic;
+using UnityEngine;
 using System.Linq;
 using System.Text;
 using System.Threading;
+using Random = System.Random;
 
 namespace h1ddengames.Extensions {
     public static class Tools {
@@ -164,10 +166,18 @@ namespace h1ddengames.Extensions {
             return (T) Convert.ChangeType(obj, typeof(T));
         }
 
+        // NEED TO FIX
         public static T ToEnum<T>(this string value) {
-            return (T) Enum.Parse(typeof(T), value, true);
+            if(value == null) {
+                Debug.Log("Returning null");
+                throw new ArgumentNullException(value);
+            } else {
+                Debug.Log("NOT null");
+                return (T) Enum.Parse(typeof(T), value, true);
+            }
         }
 
+        // NEED TO FIX
         public static T ToEnum<T>(this int value) {
             var name = Enum.GetName(typeof(T), value);
             return name.ToEnum<T>();

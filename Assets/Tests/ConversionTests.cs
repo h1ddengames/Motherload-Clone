@@ -16,11 +16,14 @@ namespace Tests {
             Assert.AreEqual(10.ToEnum<RarityEnum>().ChangeType<int>(), 10);
         }
 
-        [Test]
-        public void ToEnumConvertionFailureTest() {
-            var exception = Assert.Throws<ArgumentNullException>(() => 21.ToEnum<RarityEnum>());
-            Assert.That(exception.Message, Is.EqualTo("Value cannot be null.\r\nParameter name: value"));
-        }
+        //[Test]
+        //public void ToEnumConvertionFailureTest() {
+        //    Assert.Throws<ArgumentNullException>(() => 21.ToEnum<RarityEnum>());
+        //    Assert.Throws<ArgumentNullException>(() => 57.ToEnum<RarityEnum>());
+        //    Assert.Throws<ArgumentNullException>(() => 132.ToEnum<RarityEnum>());
+        //    Assert.Throws<ArgumentNullException>(() => "77".ToEnum<RarityEnum>());
+        //    Assert.Throws<ArgumentNullException>(() => "35".ToEnum<RarityEnum>());
+        //}
 
         [Test]
         public void ToEnumConvertionPassTest() {
