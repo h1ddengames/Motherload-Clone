@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe8c85168c983e846bbf163e8db62293, type: 3}
-  m_Name: Block Zone
+  m_Name: Block Zone 1
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -536,6 +536,6 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-  lowXPosition: -5
-  highXPosition: 5
-  lowYPosition: 10
+  lowXPosition: -8
+  highXPosition: 8
+  lowYPosition: 12

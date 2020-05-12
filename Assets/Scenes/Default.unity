@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -8100,6 +8100,1144 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1522122400}
   m_CullTransparentMesh: 0
+--- !u!1 &1522595229
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1522595231}
+  - component: {fileID: 1522595230}
+  m_Layer: 0
+  m_Name: BlockGenerator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1522595230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1522595229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cdab9e95ad4c3147b0c7ba6c37ab71a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: spritesAndAudioClips
+      Entry: 7
+      Data: 0|System.Collections.Generic.Dictionary`2[[UnityEngine.Sprite, UnityEngine.CoreModule],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: comparer
+      Entry: 7
+      Data: 1|System.Collections.Generic.ObjectEqualityComparer`1[[UnityEngine.Sprite,
+        UnityEngine.CoreModule]], mscorlib
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  blockPrefab: {fileID: 0}
+  blocks: []
+  blockModels: []
+  blockZones:
+  - {fileID: 11400000, guid: 4d0e1e47713008645b57ccf1c0431adb, type: 2}
+  - {fileID: 11400000, guid: da36b1d6813f2004aac92e684c4dba53, type: 2}
+  - {fileID: 11400000, guid: 73e836fd390bd904d966891240f07e12, type: 2}
+  - {fileID: 11400000, guid: 1b634c4ed3c78514a98bd34fd4b4039b, type: 2}
+  - {fileID: 11400000, guid: 373485774d298744f83f1a3a17bb05c8, type: 2}
+  generateThisRow:
+  - blockTypeId: 60
+    blockTypeString: RUBY
+    xPosition: -5
+    yPosition: 0
+    blockLevel: 24
+    minBlockLevel: 10
+    maxBlockLevel: 30
+    blockExperience: 923
+    minBlockExperience: 500
+    maxBlockExperience: 1000
+    blockHP: 880
+    minBlockHP: 600
+    maxBlockHP: 1000
+    blockDefense: 168
+    minBlockDefense: 100
+    maxBlockDefense: 300
+  - blockTypeId: 80
+    blockTypeString: EMERALD
+    xPosition: -4
+    yPosition: 0
+    blockLevel: 64
+    minBlockLevel: 50
+    maxBlockLevel: 80
+    blockExperience: 6833
+    minBlockExperience: 5000
+    maxBlockExperience: 10000
+    blockHP: 2174
+    minBlockHP: 1500
+    maxBlockHP: 3000
+    blockDefense: 893
+    minBlockDefense: 500
+    maxBlockDefense: 1000
+  - blockTypeId: 60
+    blockTypeString: RUBY
+    xPosition: -3
+    yPosition: 0
+    blockLevel: 13
+    minBlockLevel: 10
+    maxBlockLevel: 30
+    blockExperience: 759
+    minBlockExperience: 500
+    maxBlockExperience: 1000
+    blockHP: 706
+    minBlockHP: 600
+    maxBlockHP: 1000
+    blockDefense: 278
+    minBlockDefense: 100
+    maxBlockDefense: 300
+  - blockTypeId: 20
+    blockTypeString: BRONZE
+    xPosition: -2
+    yPosition: 0
+    blockLevel: 3
+    minBlockLevel: 2
+    maxBlockLevel: 8
+    blockExperience: 20
+    minBlockExperience: 10
+    maxBlockExperience: 25
+    blockHP: 29
+    minBlockHP: 20
+    maxBlockHP: 40
+    blockDefense: 15
+    minBlockDefense: 10
+    maxBlockDefense: 20
+  - blockTypeId: 30
+    blockTypeString: IRON
+    xPosition: -1
+    yPosition: 0
+    blockLevel: 6
+    minBlockLevel: 3
+    maxBlockLevel: 10
+    blockExperience: 49
+    minBlockExperience: 25
+    maxBlockExperience: 50
+    blockHP: 52
+    minBlockHP: 40
+    maxBlockHP: 120
+    blockDefense: 20
+    minBlockDefense: 20
+    maxBlockDefense: 30
+  - blockTypeId: 0
+    blockTypeString: BLANK
+    xPosition: 0
+    yPosition: 0
+    blockLevel: 1
+    minBlockLevel: 1
+    maxBlockLevel: 1
+    blockExperience: 0
+    minBlockExperience: 0
+    maxBlockExperience: 0
+    blockHP: 0
+    minBlockHP: 0
+    maxBlockHP: 0
+    blockDefense: 0
+    minBlockDefense: 0
+    maxBlockDefense: 0
+  - blockTypeId: 20
+    blockTypeString: BRONZE
+    xPosition: 1
+    yPosition: 0
+    blockLevel: 7
+    minBlockLevel: 2
+    maxBlockLevel: 8
+    blockExperience: 17
+    minBlockExperience: 10
+    maxBlockExperience: 25
+    blockHP: 39
+    minBlockHP: 20
+    maxBlockHP: 40
+    blockDefense: 10
+    minBlockDefense: 10
+    maxBlockDefense: 20
+  - blockTypeId: 50
+    blockTypeString: GOLD
+    xPosition: 2
+    yPosition: 0
+    blockLevel: 12
+    minBlockLevel: 8
+    maxBlockLevel: 20
+    blockExperience: 322
+    minBlockExperience: 200
+    maxBlockExperience: 500
+    blockHP: 471
+    minBlockHP: 300
+    maxBlockHP: 600
+    blockDefense: 99
+    minBlockDefense: 50
+    maxBlockDefense: 100
+  - blockTypeId: 20
+    blockTypeString: BRONZE
+    xPosition: 3
+    yPosition: 0
+    blockLevel: 7
+    minBlockLevel: 2
+    maxBlockLevel: 8
+    blockExperience: 11
+    minBlockExperience: 10
+    maxBlockExperience: 25
+    blockHP: 34
+    minBlockHP: 20
+    maxBlockHP: 40
+    blockDefense: 14
+    minBlockDefense: 10
+    maxBlockDefense: 20
+  - blockTypeId: 40
+    blockTypeString: SILVER
+    xPosition: 4
+    yPosition: 0
+    blockLevel: 14
+    minBlockLevel: 5
+    maxBlockLevel: 15
+    blockExperience: 56
+    minBlockExperience: 50
+    maxBlockExperience: 100
+    blockHP: 140
+    minBlockHP: 120
+    maxBlockHP: 300
+    blockDefense: 44
+    minBlockDefense: 30
+    maxBlockDefense: 50
+  - blockTypeId: 80
+    blockTypeString: EMERALD
+    xPosition: 5
+    yPosition: 0
+    blockLevel: 79
+    minBlockLevel: 50
+    maxBlockLevel: 80
+    blockExperience: 7095
+    minBlockExperience: 5000
+    maxBlockExperience: 10000
+    blockHP: 2342
+    minBlockHP: 1500
+    maxBlockHP: 3000
+    blockDefense: 871
+    minBlockDefense: 500
+    maxBlockDefense: 1000
+  - blockTypeId: 10
+    blockTypeString: DIRT
+    xPosition: -5
+    yPosition: 1
+    blockLevel: 4
+    minBlockLevel: 1
+    maxBlockLevel: 5
+    blockExperience: 7
+    minBlockExperience: 1
+    maxBlockExperience: 10
+    blockHP: 16
+    minBlockHP: 10
+    maxBlockHP: 20
+    blockDefense: 1
+    minBlockDefense: 1
+    maxBlockDefense: 1
+  - blockTypeId: 30
+    blockTypeString: IRON
+    xPosition: -4
+    yPosition: 1
+    blockLevel: 4
+    minBlockLevel: 3
+    maxBlockLevel: 10
+    blockExperience: 36
+    minBlockExperience: 25
+    maxBlockExperience: 50
+    blockHP: 115
+    minBlockHP: 40
+    maxBlockHP: 120
+    blockDefense: 25
+    minBlockDefense: 20
+    maxBlockDefense: 30
+  - blockTypeId: 70
+    blockTypeString: SAPPHIRE
+    xPosition: -3
+    yPosition: 1
+    blockLevel: 40
+    minBlockLevel: 20
+    maxBlockLevel: 50
+    blockExperience: 3134
+    minBlockExperience: 1000
+    maxBlockExperience: 5000
+    blockHP: 1106
+    minBlockHP: 1000
+    maxBlockHP: 1500
+    blockDefense: 366
+    minBlockDefense: 300
+    maxBlockDefense: 500
+  - blockTypeId: 80
+    blockTypeString: EMERALD
+    xPosition: -2
+    yPosition: 1
+    blockLevel: 75
+    minBlockLevel: 50
+    maxBlockLevel: 80
+    blockExperience: 5682
+    minBlockExperience: 5000
+    maxBlockExperience: 10000
+    blockHP: 2204
+    minBlockHP: 1500
+    maxBlockHP: 3000
+    blockDefense: 634
+    minBlockDefense: 500
+    maxBlockDefense: 1000
+  - blockTypeId: 40
+    blockTypeString: SILVER
+    xPosition: -1
+    yPosition: 1
+    blockLevel: 9
+    minBlockLevel: 5
+    maxBlockLevel: 15
+    blockExperience: 61
+    minBlockExperience: 50
+    maxBlockExperience: 100
+    blockHP: 238
+    minBlockHP: 120
+    maxBlockHP: 300
+    blockDefense: 42
+    minBlockDefense: 30
+    maxBlockDefense: 50
+  - blockTypeId: 10
+    blockTypeString: DIRT
+    xPosition: 0
+    yPosition: 1
+    blockLevel: 2
+    minBlockLevel: 1
+    maxBlockLevel: 5
+    blockExperience: 2
+    minBlockExperience: 1
+    maxBlockExperience: 10
+    blockHP: 11
+    minBlockHP: 10
+    maxBlockHP: 20
+    blockDefense: 1
+    minBlockDefense: 1
+    maxBlockDefense: 1
+  - blockTypeId: 20
+    blockTypeString: BRONZE
+    xPosition: 1
+    yPosition: 1
+    blockLevel: 4
+    minBlockLevel: 2
+    maxBlockLevel: 8
+    blockExperience: 23
+    minBlockExperience: 10
+    maxBlockExperience: 25
+    blockHP: 24
+    minBlockHP: 20
+    maxBlockHP: 40
+    blockDefense: 18
+    minBlockDefense: 10
+    maxBlockDefense: 20
+  - blockTypeId: 70
+    blockTypeString: SAPPHIRE
+    xPosition: 2
+    yPosition: 1
+    blockLevel: 39
+    minBlockLevel: 20
+    maxBlockLevel: 50
+    blockExperience: 4222
+    minBlockExperience: 1000
+    maxBlockExperience: 5000
+    blockHP: 1157
+    minBlockHP: 1000
+    maxBlockHP: 1500
+    blockDefense: 420
+    minBlockDefense: 300
+    maxBlockDefense: 500
+  - blockTypeId: 0
+    blockTypeString: BLANK
+    xPosition: 3
+    yPosition: 1
+    blockLevel: 1
+    minBlockLevel: 1
+    maxBlockLevel: 1
+    blockExperience: 0
+    minBlockExperience: 0
+    maxBlockExperience: 0
+    blockHP: 0
+    minBlockHP: 0
+    maxBlockHP: 0
+    blockDefense: 0
+    minBlockDefense: 0
+    maxBlockDefense: 0
+  - blockTypeId: 60
+    blockTypeString: RUBY
+    xPosition: 4
+    yPosition: 1
+    blockLevel: 17
+    minBlockLevel: 10
+    maxBlockLevel: 30
+    blockExperience: 956
+    minBlockExperience: 500
+    maxBlockExperience: 1000
+    blockHP: 912
+    minBlockHP: 600
+    maxBlockHP: 1000
+    blockDefense: 258
+    minBlockDefense: 100
+    maxBlockDefense: 300
+  - blockTypeId: 0
+    blockTypeString: BLANK
+    xPosition: 5
+    yPosition: 1
+    blockLevel: 1
+    minBlockLevel: 1
+    maxBlockLevel: 1
+    blockExperience: 0
+    minBlockExperience: 0
+    maxBlockExperience: 0
+    blockHP: 0
+    minBlockHP: 0
+    maxBlockHP: 0
+    blockDefense: 0
+    minBlockDefense: 0
+    maxBlockDefense: 0
+  - blockTypeId: 60
+    blockTypeString: RUBY
+    xPosition: -5
+    yPosition: 2
+    blockLevel: 20
+    minBlockLevel: 10
+    maxBlockLevel: 30
+    blockExperience: 519
+    minBlockExperience: 500
+    maxBlockExperience: 1000
+    blockHP: 982
+    minBlockHP: 600
+    maxBlockHP: 1000
+    blockDefense: 119
+    minBlockDefense: 100
+    maxBlockDefense: 300
+  - blockTypeId: 80
+    blockTypeString: EMERALD
+    xPosition: -4
+    yPosition: 2
+    blockLevel: 51
+    minBlockLevel: 50
+    maxBlockLevel: 80
+    blockExperience: 6549
+    minBlockExperience: 5000
+    maxBlockExperience: 10000
+    blockHP: 2071
+    minBlockHP: 1500
+    maxBlockHP: 3000
+    blockDefense: 664
+    minBlockDefense: 500
+    maxBlockDefense: 1000
+  - blockTypeId: 30
+    blockTypeString: IRON
+    xPosition: -3
+    yPosition: 2
+    blockLevel: 8
+    minBlockLevel: 3
+    maxBlockLevel: 10
+    blockExperience: 32
+    minBlockExperience: 25
+    maxBlockExperience: 50
+    blockHP: 68
+    minBlockHP: 40
+    maxBlockHP: 120
+    blockDefense: 25
+    minBlockDefense: 20
+    maxBlockDefense: 30
+  - blockTypeId: 20
+    blockTypeString: BRONZE
+    xPosition: -2
+    yPosition: 2
+    blockLevel: 2
+    minBlockLevel: 2
+    maxBlockLevel: 8
+    blockExperience: 22
+    minBlockExperience: 10
+    maxBlockExperience: 25
+    blockHP: 37
+    minBlockHP: 20
+    maxBlockHP: 40
+    blockDefense: 12
+    minBlockDefense: 10
+    maxBlockDefense: 20
+  - blockTypeId: 0
+    blockTypeString: BLANK
+    xPosition: -1
+    yPosition: 2
+    blockLevel: 1
+    minBlockLevel: 1
+    maxBlockLevel: 1
+    blockExperience: 0
+    minBlockExperience: 0
+    maxBlockExperience: 0
+    blockHP: 0
+    minBlockHP: 0
+    maxBlockHP: 0
+    blockDefense: 0
+    minBlockDefense: 0
+    maxBlockDefense: 0
+  - blockTypeId: 60
+    blockTypeString: RUBY
+    xPosition: 0
+    yPosition: 2
+    blockLevel: 20
+    minBlockLevel: 10
+    maxBlockLevel: 30
+    blockExperience: 693
+    minBlockExperience: 500
+    maxBlockExperience: 1000
+    blockHP: 743
+    minBlockHP: 600
+    maxBlockHP: 1000
+    blockDefense: 192
+    minBlockDefense: 100
+    maxBlockDefense: 300
+  - blockTypeId: 30
+    blockTypeString: IRON
+    xPosition: 1
+    yPosition: 2
+    blockLevel: 6
+    minBlockLevel: 3
+    maxBlockLevel: 10
+    blockExperience: 40
+    minBlockExperience: 25
+    maxBlockExperience: 50
+    blockHP: 119
+    minBlockHP: 40
+    maxBlockHP: 120
+    blockDefense: 21
+    minBlockDefense: 20
+    maxBlockDefense: 30
+  - blockTypeId: 20
+    blockTypeString: BRONZE
+    xPosition: 2
+    yPosition: 2
+    blockLevel: 5
+    minBlockLevel: 2
+    maxBlockLevel: 8
+    blockExperience: 22
+    minBlockExperience: 10
+    maxBlockExperience: 25
+    blockHP: 24
+    minBlockHP: 20
+    maxBlockHP: 40
+    blockDefense: 16
+    minBlockDefense: 10
+    maxBlockDefense: 20
+  - blockTypeId: 0
+    blockTypeString: BLANK
+    xPosition: 3
+    yPosition: 2
+    blockLevel: 1
+    minBlockLevel: 1
+    maxBlockLevel: 1
+    blockExperience: 0
+    minBlockExperience: 0
+    maxBlockExperience: 0
+    blockHP: 0
+    minBlockHP: 0
+    maxBlockHP: 0
+    blockDefense: 0
+    minBlockDefense: 0
+    maxBlockDefense: 0
+  - blockTypeId: 80
+    blockTypeString: EMERALD
+    xPosition: 4
+    yPosition: 2
+    blockLevel: 53
+    minBlockLevel: 50
+    maxBlockLevel: 80
+    blockExperience: 7797
+    minBlockExperience: 5000
+    maxBlockExperience: 10000
+    blockHP: 1858
+    minBlockHP: 1500
+    maxBlockHP: 3000
+    blockDefense: 739
+    minBlockDefense: 500
+    maxBlockDefense: 1000
+  - blockTypeId: 0
+    blockTypeString: BLANK
+    xPosition: 5
+    yPosition: 2
+    blockLevel: 1
+    minBlockLevel: 1
+    maxBlockLevel: 1
+    blockExperience: 0
+    minBlockExperience: 0
+    maxBlockExperience: 0
+    blockHP: 0
+    minBlockHP: 0
+    maxBlockHP: 0
+    blockDefense: 0
+    minBlockDefense: 0
+    maxBlockDefense: 0
+  - blockTypeId: 30
+    blockTypeString: IRON
+    xPosition: -5
+    yPosition: 3
+    blockLevel: 6
+    minBlockLevel: 3
+    maxBlockLevel: 10
+    blockExperience: 25
+    minBlockExperience: 25
+    maxBlockExperience: 50
+    blockHP: 44
+    minBlockHP: 40
+    maxBlockHP: 120
+    blockDefense: 23
+    minBlockDefense: 20
+    maxBlockDefense: 30
+  - blockTypeId: 40
+    blockTypeString: SILVER
+    xPosition: -4
+    yPosition: 3
+    blockLevel: 11
+    minBlockLevel: 5
+    maxBlockLevel: 15
+    blockExperience: 97
+    minBlockExperience: 50
+    maxBlockExperience: 100
+    blockHP: 284
+    minBlockHP: 120
+    maxBlockHP: 300
+    blockDefense: 49
+    minBlockDefense: 30
+    maxBlockDefense: 50
+  - blockTypeId: 80
+    blockTypeString: EMERALD
+    xPosition: -3
+    yPosition: 3
+    blockLevel: 54
+    minBlockLevel: 50
+    maxBlockLevel: 80
+    blockExperience: 6498
+    minBlockExperience: 5000
+    maxBlockExperience: 10000
+    blockHP: 1829
+    minBlockHP: 1500
+    maxBlockHP: 3000
+    blockDefense: 644
+    minBlockDefense: 500
+    maxBlockDefense: 1000
+  - blockTypeId: 60
+    blockTypeString: RUBY
+    xPosition: -2
+    yPosition: 3
+    blockLevel: 13
+    minBlockLevel: 10
+    maxBlockLevel: 30
+    blockExperience: 803
+    minBlockExperience: 500
+    maxBlockExperience: 1000
+    blockHP: 697
+    minBlockHP: 600
+    maxBlockHP: 1000
+    blockDefense: 135
+    minBlockDefense: 100
+    maxBlockDefense: 300
+  - blockTypeId: 80
+    blockTypeString: EMERALD
+    xPosition: -1
+    yPosition: 3
+    blockLevel: 67
+    minBlockLevel: 50
+    maxBlockLevel: 80
+    blockExperience: 6236
+    minBlockExperience: 5000
+    maxBlockExperience: 10000
+    blockHP: 2708
+    minBlockHP: 1500
+    maxBlockHP: 3000
+    blockDefense: 961
+    minBlockDefense: 500
+    maxBlockDefense: 1000
+  - blockTypeId: 50
+    blockTypeString: GOLD
+    xPosition: 0
+    yPosition: 3
+    blockLevel: 19
+    minBlockLevel: 8
+    maxBlockLevel: 20
+    blockExperience: 244
+    minBlockExperience: 200
+    maxBlockExperience: 500
+    blockHP: 563
+    minBlockHP: 300
+    maxBlockHP: 600
+    blockDefense: 69
+    minBlockDefense: 50
+    maxBlockDefense: 100
+  - blockTypeId: 30
+    blockTypeString: IRON
+    xPosition: 1
+    yPosition: 3
+    blockLevel: 5
+    minBlockLevel: 3
+    maxBlockLevel: 10
+    blockExperience: 38
+    minBlockExperience: 25
+    maxBlockExperience: 50
+    blockHP: 103
+    minBlockHP: 40
+    maxBlockHP: 120
+    blockDefense: 27
+    minBlockDefense: 20
+    maxBlockDefense: 30
+  - blockTypeId: 70
+    blockTypeString: SAPPHIRE
+    xPosition: 2
+    yPosition: 3
+    blockLevel: 37
+    minBlockLevel: 20
+    maxBlockLevel: 50
+    blockExperience: 4162
+    minBlockExperience: 1000
+    maxBlockExperience: 5000
+    blockHP: 1439
+    minBlockHP: 1000
+    maxBlockHP: 1500
+    blockDefense: 330
+    minBlockDefense: 300
+    maxBlockDefense: 500
+  - blockTypeId: 30
+    blockTypeString: IRON
+    xPosition: 3
+    yPosition: 3
+    blockLevel: 4
+    minBlockLevel: 3
+    maxBlockLevel: 10
+    blockExperience: 45
+    minBlockExperience: 25
+    maxBlockExperience: 50
+    blockHP: 109
+    minBlockHP: 40
+    maxBlockHP: 120
+    blockDefense: 22
+    minBlockDefense: 20
+    maxBlockDefense: 30
+  - blockTypeId: 70
+    blockTypeString: SAPPHIRE
+    xPosition: 4
+    yPosition: 3
+    blockLevel: 44
+    minBlockLevel: 20
+    maxBlockLevel: 50
+    blockExperience: 2358
+    minBlockExperience: 1000
+    maxBlockExperience: 5000
+    blockHP: 1475
+    minBlockHP: 1000
+    maxBlockHP: 1500
+    blockDefense: 452
+    minBlockDefense: 300
+    maxBlockDefense: 500
+  - blockTypeId: 70
+    blockTypeString: SAPPHIRE
+    xPosition: 5
+    yPosition: 3
+    blockLevel: 32
+    minBlockLevel: 20
+    maxBlockLevel: 50
+    blockExperience: 4351
+    minBlockExperience: 1000
+    maxBlockExperience: 5000
+    blockHP: 1454
+    minBlockHP: 1000
+    maxBlockHP: 1500
+    blockDefense: 353
+    minBlockDefense: 300
+    maxBlockDefense: 500
+  - blockTypeId: 70
+    blockTypeString: SAPPHIRE
+    xPosition: -5
+    yPosition: 4
+    blockLevel: 26
+    minBlockLevel: 20
+    maxBlockLevel: 50
+    blockExperience: 1856
+    minBlockExperience: 1000
+    maxBlockExperience: 5000
+    blockHP: 1068
+    minBlockHP: 1000
+    maxBlockHP: 1500
+    blockDefense: 435
+    minBlockDefense: 300
+    maxBlockDefense: 500
+  - blockTypeId: 40
+    blockTypeString: SILVER
+    xPosition: -4
+    yPosition: 4
+    blockLevel: 10
+    minBlockLevel: 5
+    maxBlockLevel: 15
+    blockExperience: 53
+    minBlockExperience: 50
+    maxBlockExperience: 100
+    blockHP: 213
+    minBlockHP: 120
+    maxBlockHP: 300
+    blockDefense: 42
+    minBlockDefense: 30
+    maxBlockDefense: 50
+  - blockTypeId: 40
+    blockTypeString: SILVER
+    xPosition: -3
+    yPosition: 4
+    blockLevel: 11
+    minBlockLevel: 5
+    maxBlockLevel: 15
+    blockExperience: 75
+    minBlockExperience: 50
+    maxBlockExperience: 100
+    blockHP: 207
+    minBlockHP: 120
+    maxBlockHP: 300
+    blockDefense: 39
+    minBlockDefense: 30
+    maxBlockDefense: 50
+  - blockTypeId: 10
+    blockTypeString: DIRT
+    xPosition: -2
+    yPosition: 4
+    blockLevel: 2
+    minBlockLevel: 1
+    maxBlockLevel: 5
+    blockExperience: 7
+    minBlockExperience: 1
+    maxBlockExperience: 10
+    blockHP: 10
+    minBlockHP: 10
+    maxBlockHP: 20
+    blockDefense: 1
+    minBlockDefense: 1
+    maxBlockDefense: 1
+  - blockTypeId: 60
+    blockTypeString: RUBY
+    xPosition: -1
+    yPosition: 4
+    blockLevel: 24
+    minBlockLevel: 10
+    maxBlockLevel: 30
+    blockExperience: 686
+    minBlockExperience: 500
+    maxBlockExperience: 1000
+    blockHP: 812
+    minBlockHP: 600
+    maxBlockHP: 1000
+    blockDefense: 122
+    minBlockDefense: 100
+    maxBlockDefense: 300
+  - blockTypeId: 70
+    blockTypeString: SAPPHIRE
+    xPosition: 0
+    yPosition: 4
+    blockLevel: 38
+    minBlockLevel: 20
+    maxBlockLevel: 50
+    blockExperience: 1786
+    minBlockExperience: 1000
+    maxBlockExperience: 5000
+    blockHP: 1057
+    minBlockHP: 1000
+    maxBlockHP: 1500
+    blockDefense: 403
+    minBlockDefense: 300
+    maxBlockDefense: 500
+  - blockTypeId: 80
+    blockTypeString: EMERALD
+    xPosition: 1
+    yPosition: 4
+    blockLevel: 67
+    minBlockLevel: 50
+    maxBlockLevel: 80
+    blockExperience: 8110
+    minBlockExperience: 5000
+    maxBlockExperience: 10000
+    blockHP: 2289
+    minBlockHP: 1500
+    maxBlockHP: 3000
+    blockDefense: 958
+    minBlockDefense: 500
+    maxBlockDefense: 1000
+  - blockTypeId: 50
+    blockTypeString: GOLD
+    xPosition: 2
+    yPosition: 4
+    blockLevel: 12
+    minBlockLevel: 8
+    maxBlockLevel: 20
+    blockExperience: 396
+    minBlockExperience: 200
+    maxBlockExperience: 500
+    blockHP: 360
+    minBlockHP: 300
+    maxBlockHP: 600
+    blockDefense: 81
+    minBlockDefense: 50
+    maxBlockDefense: 100
+  - blockTypeId: 70
+    blockTypeString: SAPPHIRE
+    xPosition: 3
+    yPosition: 4
+    blockLevel: 23
+    minBlockLevel: 20
+    maxBlockLevel: 50
+    blockExperience: 2280
+    minBlockExperience: 1000
+    maxBlockExperience: 5000
+    blockHP: 1126
+    minBlockHP: 1000
+    maxBlockHP: 1500
+    blockDefense: 448
+    minBlockDefense: 300
+    maxBlockDefense: 500
+  - blockTypeId: 10
+    blockTypeString: DIRT
+    xPosition: 4
+    yPosition: 4
+    blockLevel: 2
+    minBlockLevel: 1
+    maxBlockLevel: 5
+    blockExperience: 8
+    minBlockExperience: 1
+    maxBlockExperience: 10
+    blockHP: 14
+    minBlockHP: 10
+    maxBlockHP: 20
+    blockDefense: 1
+    minBlockDefense: 1
+    maxBlockDefense: 1
+  - blockTypeId: 40
+    blockTypeString: SILVER
+    xPosition: 5
+    yPosition: 4
+    blockLevel: 12
+    minBlockLevel: 5
+    maxBlockLevel: 15
+    blockExperience: 87
+    minBlockExperience: 50
+    maxBlockExperience: 100
+    blockHP: 138
+    minBlockHP: 120
+    maxBlockHP: 300
+    blockDefense: 40
+    minBlockDefense: 30
+    maxBlockDefense: 50
+  - blockTypeId: 0
+    blockTypeString: BLANK
+    xPosition: -5
+    yPosition: 5
+    blockLevel: 1
+    minBlockLevel: 1
+    maxBlockLevel: 1
+    blockExperience: 0
+    minBlockExperience: 0
+    maxBlockExperience: 0
+    blockHP: 0
+    minBlockHP: 0
+    maxBlockHP: 0
+    blockDefense: 0
+    minBlockDefense: 0
+    maxBlockDefense: 0
+  - blockTypeId: 80
+    blockTypeString: EMERALD
+    xPosition: -4
+    yPosition: 5
+    blockLevel: 59
+    minBlockLevel: 50
+    maxBlockLevel: 80
+    blockExperience: 9780
+    minBlockExperience: 5000
+    maxBlockExperience: 10000
+    blockHP: 2997
+    minBlockHP: 1500
+    maxBlockHP: 3000
+    blockDefense: 859
+    minBlockDefense: 500
+    maxBlockDefense: 1000
+  - blockTypeId: 80
+    blockTypeString: EMERALD
+    xPosition: -3
+    yPosition: 5
+    blockLevel: 50
+    minBlockLevel: 50
+    maxBlockLevel: 80
+    blockExperience: 9907
+    minBlockExperience: 5000
+    maxBlockExperience: 10000
+    blockHP: 2351
+    minBlockHP: 1500
+    maxBlockHP: 3000
+    blockDefense: 953
+    minBlockDefense: 500
+    maxBlockDefense: 1000
+  - blockTypeId: 60
+    blockTypeString: RUBY
+    xPosition: -2
+    yPosition: 5
+    blockLevel: 24
+    minBlockLevel: 10
+    maxBlockLevel: 30
+    blockExperience: 761
+    minBlockExperience: 500
+    maxBlockExperience: 1000
+    blockHP: 787
+    minBlockHP: 600
+    maxBlockHP: 1000
+    blockDefense: 289
+    minBlockDefense: 100
+    maxBlockDefense: 300
+  - blockTypeId: 50
+    blockTypeString: GOLD
+    xPosition: -1
+    yPosition: 5
+    blockLevel: 13
+    minBlockLevel: 8
+    maxBlockLevel: 20
+    blockExperience: 236
+    minBlockExperience: 200
+    maxBlockExperience: 500
+    blockHP: 537
+    minBlockHP: 300
+    maxBlockHP: 600
+    blockDefense: 96
+    minBlockDefense: 50
+    maxBlockDefense: 100
+  - blockTypeId: 50
+    blockTypeString: GOLD
+    xPosition: 0
+    yPosition: 5
+    blockLevel: 16
+    minBlockLevel: 8
+    maxBlockLevel: 20
+    blockExperience: 421
+    minBlockExperience: 200
+    maxBlockExperience: 500
+    blockHP: 445
+    minBlockHP: 300
+    maxBlockHP: 600
+    blockDefense: 51
+    minBlockDefense: 50
+    maxBlockDefense: 100
+  - blockTypeId: 10
+    blockTypeString: DIRT
+    xPosition: 1
+    yPosition: 5
+    blockLevel: 4
+    minBlockLevel: 1
+    maxBlockLevel: 5
+    blockExperience: 5
+    minBlockExperience: 1
+    maxBlockExperience: 10
+    blockHP: 10
+    minBlockHP: 10
+    maxBlockHP: 20
+    blockDefense: 1
+    minBlockDefense: 1
+    maxBlockDefense: 1
+  - blockTypeId: 60
+    blockTypeString: RUBY
+    xPosition: 2
+    yPosition: 5
+    blockLevel: 23
+    minBlockLevel: 10
+    maxBlockLevel: 30
+    blockExperience: 814
+    minBlockExperience: 500
+    maxBlockExperience: 1000
+    blockHP: 752
+    minBlockHP: 600
+    maxBlockHP: 1000
+    blockDefense: 237
+    minBlockDefense: 100
+    maxBlockDefense: 300
+  - blockTypeId: 40
+    blockTypeString: SILVER
+    xPosition: 3
+    yPosition: 5
+    blockLevel: 6
+    minBlockLevel: 5
+    maxBlockLevel: 15
+    blockExperience: 66
+    minBlockExperience: 50
+    maxBlockExperience: 100
+    blockHP: 215
+    minBlockHP: 120
+    maxBlockHP: 300
+    blockDefense: 45
+    minBlockDefense: 30
+    maxBlockDefense: 50
+  - blockTypeId: 10
+    blockTypeString: DIRT
+    xPosition: 4
+    yPosition: 5
+    blockLevel: 2
+    minBlockLevel: 1
+    maxBlockLevel: 5
+    blockExperience: 3
+    minBlockExperience: 1
+    maxBlockExperience: 10
+    blockHP: 15
+    minBlockHP: 10
+    maxBlockHP: 20
+    blockDefense: 1
+    minBlockDefense: 1
+    maxBlockDefense: 1
+  - blockTypeId: 60
+    blockTypeString: RUBY
+    xPosition: 5
+    yPosition: 5
+    blockLevel: 13
+    minBlockLevel: 10
+    maxBlockLevel: 30
+    blockExperience: 639
+    minBlockExperience: 500
+    maxBlockExperience: 1000
+    blockHP: 661
+    minBlockHP: 600
+    maxBlockHP: 1000
+    blockDefense: 269
+    minBlockDefense: 100
+    maxBlockDefense: 300
+--- !u!4 &1522595231
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1522595229}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1533798998
 GameObject:
   m_ObjectHideFlags: 0

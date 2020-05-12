@@ -45,6 +45,8 @@ namespace h1ddengames.Block {
                 lowYPosition = value; 
             } 
         }
+
+        public Dictionary<BlockModel, int> BlockProbability { get => blockProbability; set => blockProbability = value; }
         #endregion
 
         #region My Methods
@@ -68,7 +70,7 @@ namespace h1ddengames.Block {
                 lowYPosition = 1;
             }
 
-            if(blockProbability.Count < 1) {
+            if(BlockProbability.Count < 1) {
                 Debug.LogWarning("Please add blocks to the block probability dictionary.");
             }
         }
