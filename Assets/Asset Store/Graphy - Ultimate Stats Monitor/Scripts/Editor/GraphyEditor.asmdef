@@ -1,0 +1,17 @@
+{
+    "name": "GraphyEditor",
+    "references": [
+        "GUID:5c120fcb4a7e34c40a11c778bbb22dae"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
