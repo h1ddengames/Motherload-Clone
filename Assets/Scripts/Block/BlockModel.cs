@@ -8,7 +8,6 @@ namespace h1ddengames.Block {
     [Serializable]
     public class BlockModel {
         #region Exposed Fields
-        [SerializeField] private BlockType blockType;
         [SerializeField] private int blockTypeId;
         [SerializeField] private string blockTypeString;
         [SerializeField] private int xPosition;
@@ -67,7 +66,7 @@ namespace h1ddengames.Block {
             }
         }
 
-        public BlockType BlockType { get => blockType; set => blockType = value; }
+        public BlockTypeModel BlockType { get; set; }
         public int BlockTypeId { get => blockTypeId; set => blockTypeId = value; }
         public string BlockTypeString { get => blockTypeString; set => blockTypeString = value; }
         public int XPosition { get => xPosition; set => xPosition = value; }

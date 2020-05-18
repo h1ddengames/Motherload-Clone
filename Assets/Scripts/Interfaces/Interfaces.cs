@@ -7,7 +7,7 @@ namespace h1ddengames.Interfaces {
     namespace Blocks {
         public interface IBlockType {
             IBlockPosition WithBlockType();
-            IBlockPosition WithBlockType(BlockType blockType);
+            IBlockPosition WithBlockType(BlockTypeModel blockType);
         }
 
         public interface IBlockPosition {

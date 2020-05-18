@@ -50,6 +50,44 @@ namespace Tests
             }
         }
 
+        [Test]
+        public void RandomFloatValueWithDecimals() {
+            for(int i = 0; i < 5; i++) {
+                float f = Tools.GetRandomFloat();
+                Debug.Log($"Raw value: {f}");
+                Debug.Log($"Modified value: {f.ToDecimalPlaces(1)}");
+                Debug.Log("----------------------------------------------------");
+            }
+
+            for(int i = 0; i < 5; i++) {
+                float f = Tools.GetRandomFloat();
+                Debug.Log($"Raw value: {f}");
+                Debug.Log($"Modified value: {f.ToDecimalPlaces(2)}");
+                Debug.Log("----------------------------------------------------");
+            }
+
+            for(int i = 0; i < 5; i++) {
+                float f = Tools.GetRandomFloat();
+                Debug.Log($"Raw value: {f}");
+                Debug.Log($"Modified value: {f.ToDecimalPlaces(3)}");
+                Debug.Log("----------------------------------------------------");
+            }
+
+            for(int i = 0; i < 5; i++) {
+                float f = Tools.GetRandomFloat();
+                Debug.Log($"Raw value: {f}");
+                Debug.Log($"Modified value: {f.ToDecimalPlaces(4)}");
+                Debug.Log("----------------------------------------------------");
+            }
+
+            for(int i = 0; i < 5; i++) {
+                float f = Tools.GetRandomFloat();
+                Debug.Log($"Raw value: {f}");
+                Debug.Log($"Modified value: {f.ToDecimalPlaces(5)}");
+                Debug.Log("----------------------------------------------------");
+            }
+        }
+
         //[Test]
         //public void RandomFloatValuesWithBoundsToOneDecimalPlaces() {
         //    for(int i = 0; i < iterations; i++) {
