@@ -2,8 +2,8 @@
 
 using System;
 using System.Collections.Generic;
+using h1ddengames.Enums.Blocks;
 using Sirenix.OdinInspector;
-using Michsky.UI.ModernUIPack;
 using UnityEngine;
 
 namespace h1ddengames.Block {
@@ -13,7 +13,17 @@ namespace h1ddengames.Block {
         [SerializeField] private int lowXPosition; // How far left the blocks should spawn.
         [SerializeField] private int highXPosition; // How far right the blocks should spawn.
         [SerializeField] private int lowYPosition; // How far down the blocks should spawn.
-        [SerializeField] private Dictionary<BlockModel, int> blockProbability = new Dictionary<BlockModel, int>();
+        [SerializeField] private Dictionary<BlockTypeModel, int> blockProbability = new Dictionary<BlockTypeModel, int>() {
+            { BlockType.BLANK, 0 },
+            { BlockType.DIRT, 0 },
+            { BlockType.BRONZE, 0 },
+            { BlockType.IRON, 0 },
+            { BlockType.SILVER, 0 },
+            { BlockType.GOLD, 0 },
+            { BlockType.RUBY, 0 },
+            { BlockType.SAPPHIRE, 0 },
+            { BlockType.EMERALD, 0 }
+        };
         #endregion
 
         #region Private Fields
@@ -46,7 +56,7 @@ namespace h1ddengames.Block {
             } 
         }
 
-        public Dictionary<BlockModel, int> BlockProbability { get => blockProbability; set => blockProbability = value; }
+        public Dictionary<BlockTypeModel, int> BlockProbability { get => blockProbability; set => blockProbability = value; }
         #endregion
 
         #region My Methods

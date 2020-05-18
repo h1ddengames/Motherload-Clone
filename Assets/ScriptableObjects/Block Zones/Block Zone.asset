@@ -15,16 +15,7 @@ MonoBehaviour:
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
-    ReferencedUnityObjects:
-    - {fileID: 21300000, guid: ba362fe424d833b459d715ebe1a0bf70, type: 3}
-    - {fileID: 21300000, guid: 96e50df401833204a9344b611627c10e, type: 3}
-    - {fileID: 21300000, guid: 128cf37a2d43f3e40b4025a8a9ea59ed, type: 3}
-    - {fileID: 21300000, guid: fd623028f21b0c949accc0ac035ad637, type: 3}
-    - {fileID: 21300000, guid: d4654c782810e38439e4201c988cc710, type: 3}
-    - {fileID: 21300000, guid: b35ea698ad9976e419d65438caa1ec24, type: 3}
-    - {fileID: 21300000, guid: b57a583267514a746a04810e9dc02f42, type: 3}
-    - {fileID: 21300000, guid: 907d19e516c18304fb4946a724d3b71b, type: 3}
-    - {fileID: 21300000, guid: fc757d63914ae9b4e93258e884d44f0d, type: 3}
+    ReferencedUnityObjects: []
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -32,12 +23,12 @@ MonoBehaviour:
     SerializationNodes:
     - Name: blockProbability
       Entry: 7
-      Data: 0|UnityEngine.Rendering.SerializedDictionary`2[[h1ddengames.Block.BlockModel,
-        Assembly-CSharp],[System.Int32, mscorlib]], Unity.RenderPipelines.Core.Runtime
+      Data: 0|System.Collections.Generic.Dictionary`2[[h1ddengames.Enums.Blocks.BlockTypeModel,
+        Internal],[System.Int32, mscorlib]], mscorlib
     - Name: comparer
       Entry: 7
-      Data: 1|System.Collections.Generic.ObjectEqualityComparer`1[[h1ddengames.Block.BlockModel,
-        Assembly-CSharp]], mscorlib
+      Data: 1|System.Collections.Generic.ObjectEqualityComparer`1[[h1ddengames.Enums.Blocks.BlockTypeModel,
+        Internal]], mscorlib
     - Name: 
       Entry: 8
       Data: 
@@ -49,208 +40,7 @@ MonoBehaviour:
       Data: 
     - Name: $k
       Entry: 7
-      Data: 2|h1ddengames.Block.BlockModel, Assembly-CSharp
-    - Name: blockSprite
-      Entry: 10
-      Data: 0
-    - Name: blockLevel
-      Entry: 3
-      Data: 0
-    - Name: blockLevelRandomness
-      Entry: 7
-      Data: UnityEngine.Vector2, UnityEngine.CoreModule
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: blockExperience
-      Entry: 3
-      Data: 0
-    - Name: blockExperienceRandomness
-      Entry: 7
-      Data: UnityEngine.Vector2, UnityEngine.CoreModule
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: timeToDestroy
-      Entry: 4
-      Data: 0
-    - Name: blockDestructionAudioClip
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: $v
-      Entry: 3
-      Data: 5
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 7
-      Data: 3|h1ddengames.Block.BlockModel, Assembly-CSharp
-    - Name: blockSprite
-      Entry: 10
-      Data: 1
-    - Name: blockLevel
-      Entry: 3
-      Data: 1
-    - Name: blockLevelRandomness
-      Entry: 7
-      Data: UnityEngine.Vector2, UnityEngine.CoreModule
-    - Name: 
-      Entry: 4
-      Data: 1
-    - Name: 
-      Entry: 4
-      Data: 1
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: blockExperience
-      Entry: 3
-      Data: 15
-    - Name: blockExperienceRandomness
-      Entry: 7
-      Data: UnityEngine.Vector2, UnityEngine.CoreModule
-    - Name: 
-      Entry: 4
-      Data: 10
-    - Name: 
-      Entry: 4
-      Data: 20
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: timeToDestroy
-      Entry: 4
-      Data: 1
-    - Name: blockDestructionAudioClip
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: $v
-      Entry: 3
-      Data: 90
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 7
-      Data: 4|h1ddengames.Block.BlockModel, Assembly-CSharp
-    - Name: blockSprite
-      Entry: 10
-      Data: 2
-    - Name: blockLevel
-      Entry: 3
-      Data: 1
-    - Name: blockLevelRandomness
-      Entry: 7
-      Data: UnityEngine.Vector2, UnityEngine.CoreModule
-    - Name: 
-      Entry: 4
-      Data: 1
-    - Name: 
-      Entry: 4
-      Data: 2
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: blockExperience
-      Entry: 3
-      Data: 45
-    - Name: blockExperienceRandomness
-      Entry: 7
-      Data: UnityEngine.Vector2, UnityEngine.CoreModule
-    - Name: 
-      Entry: 4
-      Data: 30
-    - Name: 
-      Entry: 4
-      Data: 70
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: timeToDestroy
-      Entry: 4
-      Data: 2
-    - Name: blockDestructionAudioClip
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: $v
-      Entry: 3
-      Data: 3
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 7
-      Data: 5|h1ddengames.Block.BlockModel, Assembly-CSharp
-    - Name: blockSprite
-      Entry: 10
-      Data: 3
-    - Name: blockLevel
-      Entry: 3
-      Data: 1
-    - Name: blockLevelRandomness
-      Entry: 7
-      Data: UnityEngine.Vector2, UnityEngine.CoreModule
-    - Name: 
-      Entry: 4
-      Data: 1
-    - Name: 
-      Entry: 4
-      Data: 2
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: blockExperience
-      Entry: 3
-      Data: 35
-    - Name: blockExperienceRandomness
-      Entry: 7
-      Data: UnityEngine.Vector2, UnityEngine.CoreModule
-    - Name: 
-      Entry: 4
-      Data: 30
-    - Name: 
-      Entry: 4
-      Data: 70
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: timeToDestroy
-      Entry: 4
-      Data: 2
-    - Name: blockDestructionAudioClip
-      Entry: 6
-      Data: 
+      Data: 2|h1ddengames.Enums.Blocks.BlockTypeModel, Internal
     - Name: 
       Entry: 8
       Data: 
@@ -265,52 +55,28 @@ MonoBehaviour:
       Data: 
     - Name: $k
       Entry: 7
-      Data: 6|h1ddengames.Block.BlockModel, Assembly-CSharp
-    - Name: blockSprite
-      Entry: 10
+      Data: 3|h1ddengames.Enums.Blocks.BlockTypeModel, Internal
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: $v
+      Entry: 3
+      Data: 80
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 7
+      Data: 4|h1ddengames.Enums.Blocks.BlockTypeModel, Internal
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: $v
+      Entry: 3
       Data: 4
-    - Name: blockLevel
-      Entry: 3
-      Data: 0
-    - Name: blockLevelRandomness
-      Entry: 7
-      Data: UnityEngine.Vector2, UnityEngine.CoreModule
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: blockExperience
-      Entry: 3
-      Data: 0
-    - Name: blockExperienceRandomness
-      Entry: 7
-      Data: UnityEngine.Vector2, UnityEngine.CoreModule
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: timeToDestroy
-      Entry: 4
-      Data: 0
-    - Name: blockDestructionAudioClip
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: $v
-      Entry: 3
-      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -319,106 +85,13 @@ MonoBehaviour:
       Data: 
     - Name: $k
       Entry: 7
-      Data: 7|h1ddengames.Block.BlockModel, Assembly-CSharp
-    - Name: blockSprite
-      Entry: 10
-      Data: 5
-    - Name: blockLevel
-      Entry: 3
-      Data: 0
-    - Name: blockLevelRandomness
-      Entry: 7
-      Data: UnityEngine.Vector2, UnityEngine.CoreModule
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: blockExperience
-      Entry: 3
-      Data: 0
-    - Name: blockExperienceRandomness
-      Entry: 7
-      Data: UnityEngine.Vector2, UnityEngine.CoreModule
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: timeToDestroy
-      Entry: 4
-      Data: 0
-    - Name: blockDestructionAudioClip
-      Entry: 6
-      Data: 
+      Data: 5|h1ddengames.Enums.Blocks.BlockTypeModel, Internal
     - Name: 
       Entry: 8
       Data: 
     - Name: $v
       Entry: 3
-      Data: 0
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 7
-      Data: 8|h1ddengames.Block.BlockModel, Assembly-CSharp
-    - Name: blockSprite
-      Entry: 10
       Data: 6
-    - Name: blockLevel
-      Entry: 3
-      Data: 0
-    - Name: blockLevelRandomness
-      Entry: 7
-      Data: UnityEngine.Vector2, UnityEngine.CoreModule
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: blockExperience
-      Entry: 3
-      Data: 0
-    - Name: blockExperienceRandomness
-      Entry: 7
-      Data: UnityEngine.Vector2, UnityEngine.CoreModule
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: timeToDestroy
-      Entry: 4
-      Data: 0
-    - Name: blockDestructionAudioClip
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: $v
-      Entry: 3
-      Data: 0
     - Name: 
       Entry: 8
       Data: 
@@ -427,52 +100,13 @@ MonoBehaviour:
       Data: 
     - Name: $k
       Entry: 7
-      Data: 9|h1ddengames.Block.BlockModel, Assembly-CSharp
-    - Name: blockSprite
-      Entry: 10
-      Data: 7
-    - Name: blockLevel
-      Entry: 3
-      Data: 0
-    - Name: blockLevelRandomness
-      Entry: 7
-      Data: UnityEngine.Vector2, UnityEngine.CoreModule
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: blockExperience
-      Entry: 3
-      Data: 0
-    - Name: blockExperienceRandomness
-      Entry: 7
-      Data: UnityEngine.Vector2, UnityEngine.CoreModule
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: timeToDestroy
-      Entry: 4
-      Data: 0
-    - Name: blockDestructionAudioClip
-      Entry: 6
-      Data: 
+      Data: 6|h1ddengames.Enums.Blocks.BlockTypeModel, Internal
     - Name: 
       Entry: 8
       Data: 
     - Name: $v
       Entry: 3
-      Data: 0
+      Data: 2
     - Name: 
       Entry: 8
       Data: 
@@ -481,52 +115,58 @@ MonoBehaviour:
       Data: 
     - Name: $k
       Entry: 7
-      Data: 10|h1ddengames.Block.BlockModel, Assembly-CSharp
-    - Name: blockSprite
-      Entry: 10
-      Data: 8
-    - Name: blockLevel
-      Entry: 3
-      Data: 0
-    - Name: blockLevelRandomness
-      Entry: 7
-      Data: UnityEngine.Vector2, UnityEngine.CoreModule
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: blockExperience
-      Entry: 3
-      Data: 0
-    - Name: blockExperienceRandomness
-      Entry: 7
-      Data: UnityEngine.Vector2, UnityEngine.CoreModule
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: timeToDestroy
-      Entry: 4
-      Data: 0
-    - Name: blockDestructionAudioClip
-      Entry: 6
-      Data: 
+      Data: 7|h1ddengames.Enums.Blocks.BlockTypeModel, Internal
     - Name: 
       Entry: 8
       Data: 
     - Name: $v
       Entry: 3
-      Data: 0
+      Data: 2
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 7
+      Data: 8|h1ddengames.Enums.Blocks.BlockTypeModel, Internal
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: $v
+      Entry: 3
+      Data: 2
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 7
+      Data: 9|h1ddengames.Enums.Blocks.BlockTypeModel, Internal
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: $v
+      Entry: 3
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 7
+      Data: 10|h1ddengames.Enums.Blocks.BlockTypeModel, Internal
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: $v
+      Entry: 3
+      Data: 1
     - Name: 
       Entry: 8
       Data: 
@@ -536,6 +176,6 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-  lowXPosition: -5
-  highXPosition: 5
-  lowYPosition: 10
+  lowXPosition: -10
+  highXPosition: 10
+  lowYPosition: 100

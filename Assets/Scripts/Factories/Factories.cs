@@ -5,6 +5,7 @@ using h1ddengames.Block;
 using h1ddengames.Interfaces.Blocks;
 using h1ddengames.Enums.Blocks;
 using h1ddengames.Extensions;
+using UnityEngine;
 
 namespace h1ddengames.Factories {
     namespace Blocks {
@@ -21,7 +22,7 @@ namespace h1ddengames.Factories {
                 return WithBlockType(Tools.GetRandomValue(BlockType.ALLBLOCKS));
             }
 
-            public IBlockPosition WithBlockType(BlockType blockType) {
+            public IBlockPosition WithBlockType(BlockTypeModel blockType) {
                 blockModel.BlockType = blockType;
                 blockModel.BlockTypeId = blockType.Id;
                 blockModel.BlockTypeString = blockType.BlockName;
